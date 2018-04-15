@@ -1,0 +1,53 @@
+.text {
+	font-family: 'Museo';
+	font-style: normal;
+	color: #000;
+	font-weight: 300;
+	line-height: 28px;
+	position: relative;
+    z-index: 1
+
+	&_size_small {
+		font-size: 16px;
+	}
+
+	&_size_middle {
+		font-size: 18px;
+	}
+
+	&_size_large {
+		font-size: 22px; 
+	}
+
+	&_size_xlarge {
+		font-size: 32px;
+	}
+
+
+	&_weight_normal {
+		font-weight: 700; 
+	}
+
+	&_weight_bold {
+		font-weight: 900;
+	}
+
+
+	&_color_white {
+		color: #fff;
+	}
+
+	&_color_grey {
+		color: #656565;
+	}
+
+	&_color_red {
+		color: #ee4136;
+	}
+
+	
+	&_uppercase {
+		text-transform: uppercase;
+	}
+
+}

@@ -1,0 +1,17 @@
+.speakers {
+	img {
+		margin-bottom: 50px;
+	}
+
+	&__list {
+		list-style: none;
+		display: flex;
+		margin: 140px 0 440px 0;
+		padding: 0;
+	}
+
+	&__item {
+		text-align: center;
+		align-self: flex-end;
+	}
+}

@@ -1,0 +1,43 @@
+.intro {
+	margin-top: 320px;
+	margin-bottom: 250px;
+
+	&__date {
+		display: flex;
+	}
+
+	&__left {
+		width: 260px;
+		padding: 0 70px;
+	}
+
+	&__right {
+		
+	}
+
+	&__buttoncontainer {
+		display: flex;
+	}
+
+	&__button {
+		padding: 15px;
+		font-family: 'Museo';
+		font-size: 24px;
+		text-transform: uppercase;
+		font-weight: 700;
+		color: #fff;
+		margin-top: 10px;
+
+		&_red {
+			background-color: #ec1a43;
+		}
+
+		&_orange {
+			background-color: #ff900e;
+		}
+
+		&_blue {
+			background-color: #07acb7;
+		}
+	}
+}
