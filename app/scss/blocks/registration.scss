@@ -1,0 +1,13 @@
+.registration {
+	padding-top: 120px;
+}
+
+.registration::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	background-color: #16adc4;
+}
+

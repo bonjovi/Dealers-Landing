@@ -105,9 +105,24 @@ h1 {
 		margin-bottom: 30px;
 	}
 }
+.registration {
+	padding-top: 120px;
+}
+
+.registration::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	background-color: #16adc4;
+}
+
+
 .section {
 	width: 1140px;
-	padding: 0 30px;
+	padding-left: 30px;
+	padding-right: 30px;
 	margin-left: auto;
 	margin-right: auto;
 }
