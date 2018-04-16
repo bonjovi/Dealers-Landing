@@ -411,33 +411,41 @@ input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
   font-family: 'Museo';
   font-size: 1rem;
-  color: #000; }
+  color: #3c3c3c; }
 
 input::-moz-placeholder,
 textarea::-moz-placeholder {
   font-family: 'Museo';
   font-size: 1rem;
-  color: #000; }
+  color: #3c3c3c; }
 
 /* Firefox 19+ */
 input:-moz-placeholder,
 textarea:-moz-placeholder {
   font-family: 'Museo';
   font-size: 1rem;
-  color: #000; }
+  color: #3c3c3c; }
 
 /* Firefox 18- */
 input:-ms-input-placeholder,
 textarea:-ms-input-placeholder {
   font-family: 'Museo';
   font-size: 1rem;
-  color: #000; }
+  color: #3c3c3c; }
 
 .body {
   background: #fff url(/img/bg.jpg) 0 0 no-repeat; }
 
 h1 {
   margin-bottom: 20px; }
+
+.input {
+  background-color: #fff;
+  padding: 15px;
+  width: 690px;
+  margin-bottom: 20px;
+  border: none;
+  position: relative; }
 
 .intro {
   margin-top: 320px;
@@ -517,6 +525,15 @@ h1 {
 
 .registration {
   padding-top: 120px; }
+  .registration__form {
+    margin: 80px 0 0 80px; }
+  .registration__triangle {
+    -webkit-transform: skew(20deg);
+        -ms-transform: skew(20deg);
+            transform: skew(20deg);
+    background-color: #16adc4;
+    width: 100%;
+    height: 190px; }
 
 .registration::before {
   content: "";
@@ -582,6 +599,14 @@ h1 {
 .underline {
   width: 200px;
   height: 4px;
-  background-color: red;
+  background-color: #fbb314;
   position: absolute;
   left: 0; }
+  .underline_red {
+    background-color: #ee4136; }
+  .underline_white {
+    background-color: #fff; }
+  .underline_yellow {
+    background-color: #fbb314; }
+  .underline_lightyellow {
+    background-color: #ffef41; }

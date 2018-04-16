@@ -1,7 +1,23 @@
 .underline {
 	width: 200px;
 	height: 4px;
-	background-color: red;
+	background-color: #fbb314;
 	position: absolute;
 	left: 0;
+
+	&_red {
+		background-color: #ee4136;
+	}
+
+	&_white {
+		background-color: #fff;
+	}
+
+	&_yellow {
+		background-color: #fbb314;
+	}
+
+	&_lightyellow {
+		background-color: #ffef41;
+	}
 }
