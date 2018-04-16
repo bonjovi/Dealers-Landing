@@ -5,7 +5,7 @@
 	font-weight: 300;
 	line-height: 28px;
 	position: relative;
-    z-index: 1
+    z-index: 1;
 
 	&_size_small {
 		font-size: 16px;
@@ -50,4 +50,20 @@
 		text-transform: uppercase;
 	}
 
+	&_markered {
+		padding-left: 30px;
+
+		&::before {
+			content: "";
+			width: 10px;
+			height: 10px;
+			background-color: #ff6b6b;
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 8px;
+		}
+	}
+
 }
+

@@ -1,0 +1,19 @@
+.news {
+	margin-bottom: 400px;
+	
+	&__newsicon {
+		width: 102px;
+		height: 98px;
+		margin-top: 60px;
+		margin-left: 500px;
+		position: absolute;
+	}
+
+	&__list {
+		margin: 100px 0 0 200px;
+	}
+
+	&__record {
+		margin-bottom: 50px;
+	}
+}

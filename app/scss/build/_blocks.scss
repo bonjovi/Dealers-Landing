@@ -5,13 +5,44 @@
 h1 {
 	margin-bottom: 20px;
 }
+.contacts {
+	background-color: #5b27b0;
+
+	&__text {
+		display: flex;
+	}
+
+	&__left {
+		padding: 0 150px 0 90px;
+	}
+
+	&__bg {
+		background: transparent url(/img/contacts-bg.jpg) 0 0 no-repeat;
+		height: 262px;
+		width: 100%;
+		position: absolute;
+		margin-top: -262px;
+		left: 0;
+		background-size: cover;
+	}
+
+	&::before {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 350px;
+		left: 0;
+		background-color: #5b27b0;
+	}
+}
 .input {
 	background-color: #fff;
-	padding: 15px;
+	padding: 16px;
 	width: 690px;
 	margin-bottom: 20px;
 	border: none;
 	position: relative;
+	color: #3c3c3c;
 }
 .intro {
 	margin-top: 320px;
@@ -54,6 +85,25 @@ h1 {
 		&_blue {
 			background-color: #07acb7;
 		}
+	}
+}
+.news {
+	margin-bottom: 400px;
+	
+	&__newsicon {
+		width: 102px;
+		height: 98px;
+		margin-top: 60px;
+		margin-left: 500px;
+		position: absolute;
+	}
+
+	&__list {
+		margin: 100px 0 0 200px;
+	}
+
+	&__record {
+		margin-bottom: 50px;
 	}
 }
 .organizator {
@@ -118,6 +168,10 @@ h1 {
 
 	&__form {
 		margin: 80px 0 0 80px;
+		display: flex;
+    	flex-direction: column;
+    	align-items: flex-end;
+    	width: 720px;
 	}
 
 	&__triangle {
@@ -125,6 +179,20 @@ h1 {
 		background-color: #16adc4;
 		width: 100%;
 		height: 190px;
+	}
+
+	&__emailicon {
+		width: 102px;
+		height: 96px;
+		margin-top: -80px;
+		margin-left: 820px;
+		position: absolute;
+	}
+
+	&__keyicon {
+		margin-top: 260px;
+		margin-left: -300px;
+		position: absolute;
 	}
 }
 
@@ -164,6 +232,26 @@ h1 {
 		align-self: flex-end;
 	}
 }
+.submit {
+	padding: 16px 80px;
+	text-transform: uppercase;
+	font-size: 14px;
+	color: #fff;
+	background-color: #034ea2;
+	font-family: 'Museo';
+	border: none;
+	border-radius: 3px;
+	font-weight: 700;
+	position: relative;
+	cursor: pointer;
+	transition: background-color 0.5s;
+	transition: color 0.5s;
+}
+
+.submit:hover {
+	background-color: #075bb9;
+	color: #cde0f6;
+}
 .text {
 	font-family: 'Museo';
 	font-style: normal;
@@ -171,7 +259,7 @@ h1 {
 	font-weight: 300;
 	line-height: 28px;
 	position: relative;
-    z-index: 1
+    z-index: 1;
 
 	&_size_small {
 		font-size: 16px;
@@ -216,7 +304,23 @@ h1 {
 		text-transform: uppercase;
 	}
 
+	&_markered {
+		padding-left: 30px;
+
+		&::before {
+			content: "";
+			width: 10px;
+			height: 10px;
+			background-color: #ff6b6b;
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 8px;
+		}
+	}
+
 }
+
 
 .underline {
 	width: 200px;
@@ -239,5 +343,9 @@ h1 {
 
 	&_lightyellow {
 		background-color: #ffef41;
+	}
+
+	&_blue {
+		background-color: #01b7d3;
 	}
 }

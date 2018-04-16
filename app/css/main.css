@@ -439,13 +439,39 @@ textarea:-ms-input-placeholder {
 h1 {
   margin-bottom: 20px; }
 
+.contacts {
+  background-color: #5b27b0; }
+  .contacts__text {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+  .contacts__left {
+    padding: 0 150px 0 90px; }
+  .contacts__bg {
+    background: transparent url(/img/contacts-bg.jpg) 0 0 no-repeat;
+    height: 262px;
+    width: 100%;
+    position: absolute;
+    margin-top: -262px;
+    left: 0;
+    background-size: cover; }
+  .contacts::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 350px;
+    left: 0;
+    background-color: #5b27b0; }
+
 .input {
   background-color: #fff;
-  padding: 15px;
+  padding: 16px;
   width: 690px;
   margin-bottom: 20px;
   border: none;
-  position: relative; }
+  position: relative;
+  color: #3c3c3c; }
 
 .intro {
   margin-top: 320px;
@@ -477,6 +503,19 @@ h1 {
       background-color: #ff900e; }
     .intro__button_blue {
       background-color: #07acb7; }
+
+.news {
+  margin-bottom: 400px; }
+  .news__newsicon {
+    width: 102px;
+    height: 98px;
+    margin-top: 60px;
+    margin-left: 500px;
+    position: absolute; }
+  .news__list {
+    margin: 100px 0 0 200px; }
+  .news__record {
+    margin-bottom: 50px; }
 
 .organizator__greyfigure {
   position: absolute;
@@ -526,7 +565,21 @@ h1 {
 .registration {
   padding-top: 120px; }
   .registration__form {
-    margin: 80px 0 0 80px; }
+    margin: 80px 0 0 80px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    width: 720px; }
   .registration__triangle {
     -webkit-transform: skew(20deg);
         -ms-transform: skew(20deg);
@@ -534,6 +587,16 @@ h1 {
     background-color: #16adc4;
     width: 100%;
     height: 190px; }
+  .registration__emailicon {
+    width: 102px;
+    height: 96px;
+    margin-top: -80px;
+    margin-left: 820px;
+    position: absolute; }
+  .registration__keyicon {
+    margin-top: 260px;
+    margin-left: -300px;
+    position: absolute; }
 
 .registration::before {
   content: "";
@@ -568,6 +631,27 @@ h1 {
       -ms-flex-item-align: end;
           align-self: flex-end; }
 
+.submit {
+  padding: 16px 80px;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #fff;
+  background-color: #034ea2;
+  font-family: 'Museo';
+  border: none;
+  border-radius: 3px;
+  font-weight: 700;
+  position: relative;
+  cursor: pointer;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s; }
+
+.submit:hover {
+  background-color: #075bb9;
+  color: #cde0f6; }
+
 .text {
   font-family: 'Museo';
   font-style: normal;
@@ -575,8 +659,9 @@ h1 {
   font-weight: 300;
   line-height: 28px;
   position: relative;
-  z-index: 1 .text _size_small;
-    z-index-font-size: 16px; }
+  z-index: 1; }
+  .text_size_small {
+    font-size: 16px; }
   .text_size_middle {
     font-size: 18px; }
   .text_size_large {
@@ -595,6 +680,17 @@ h1 {
     color: #ee4136; }
   .text_uppercase {
     text-transform: uppercase; }
+  .text_markered {
+    padding-left: 30px; }
+    .text_markered::before {
+      content: "";
+      width: 10px;
+      height: 10px;
+      background-color: #ff6b6b;
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 8px; }
 
 .underline {
   width: 200px;
@@ -610,3 +706,5 @@ h1 {
     background-color: #fbb314; }
   .underline_lightyellow {
     background-color: #ffef41; }
+  .underline_blue {
+    background-color: #01b7d3; }
